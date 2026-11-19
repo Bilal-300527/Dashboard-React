@@ -1,0 +1,136 @@
+.service-welcome {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    margin-bottom: 25px;
+}
+
+.service-welcome h1 {
+    font-size: 30px;
+    margin-bottom: 12px;
+    color: #24213a;
+}
+
+.service-welcome p {
+    color: #777;
+    line-height: 1.7;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.service-card {
+    background: white;
+    padding: 28px;
+    border-radius: 15px;
+    transition: 0.3s;
+    box-shadow: 0 3px 15px #00000008;
+}
+
+.service-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px #00000010;
+}
+
+.service-icon {
+    width: 55px;
+    height: 55px;
+    border-radius: 14px;
+    display: grid;
+    place-items: center;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.service-icon.purple {
+    background: #eee8ff;
+    color: #8055dc;
+}
+
+.service-icon.pink {
+    background: #ffe8f0;
+    color: #e85c96;
+}
+
+.service-icon.blue {
+    background: #e5f0ff;
+    color: #4388e8;
+}
+
+.service-icon.green {
+    background: #e4f8ec;
+    color: #35ae6a;
+}
+
+.service-icon.orange {
+    background: #fff0df;
+    color: #ed9941;
+}
+
+.service-card h3 {
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+.service-card p {
+    color: #888;
+    font-size: 14px;
+    line-height: 1.7;
+    min-height: 70px;
+}
+
+.service-card a {
+    display: inline-block;
+    margin-top: 18px;
+    color: #7952db;
+    font-weight: 600;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.service-bottom {
+    margin-top: 25px;
+    padding: 30px;
+    background: linear-gradient(120deg, #7048d9, #a36be9);
+    color: white;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.service-bottom p {
+    margin-top: 10px;
+    color: #eee5ff;
+}
+
+.service-contact-btn {
+    padding: 13px 20px;
+    background: white;
+    color: #7048d9;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+@media (max-width: 900px) {
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .service-bottom {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}
